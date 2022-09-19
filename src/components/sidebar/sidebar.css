@@ -1,8 +1,19 @@
 .sidebar{
     flex: 3;
-    height: calc(100vh-50px);
+    height: calc(100vh - 50px);
     overflow-y: scroll;
-    background-color: aqua;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(179,179,179);
 }
 
 .sidebarWrapper{
