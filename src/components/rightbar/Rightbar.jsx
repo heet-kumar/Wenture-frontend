@@ -19,6 +19,7 @@ export default function Rightbar(){
                             <img src="/assets/person/3.jpg" alt="" className="rightbarProfileImg" />
                             <span className="rightbarOnline"></span>
                         </div>
+                        <span className="rightbarUsername">Bucky Roger</span>
                     </li>
                 </ul>
             </div>
