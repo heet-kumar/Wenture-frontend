@@ -9,7 +9,6 @@ export default function Feed(){
         <div className="feed">
             <div className="feedWrapper">
                 <Share />
-                {/* <Post /> */}
                 {
                     Posts.map(p => {
                         return <Post key={p.id} value={p} />
