@@ -3,10 +3,11 @@ import './rightbar.css';
 import {Users} from '../../dummyData';
 import Online from '../online/Online';
 
-export default function Rightbar(){
-    return(
-        <div className="rightbar">
-            <div className="rightbarWrapper">
+export default function Rightbar({profile}){
+
+    const HomeRightbar = () => {
+        return(
+            <>
                 <div className="birthdayContainer">
                     <img src="/assets/gift.png" alt="" className="birthdayImg" />
                     <span className="birthdayText">
@@ -22,6 +23,43 @@ export default function Rightbar(){
                         ))
                     }
                 </ul>
+            </>
+        );
+    }
+
+    const ProfileRightbar = () => {
+        return(
+            <>
+                <h4 className="rightbarTitle">User Information</h4>
+                <div className="rightbarInfo">
+                    <div className="rightbarInfoItem">
+                        <span className="rightbarInfoKey">City:</span>
+                        <span className="rightbarInfoValue">Junagadh</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                        <span className="rightbarInfoKey">From:</span>
+                        <span className="rightbarInfoValue">Warsaw</span>
+                    </div>
+                    <div className="rightbarInfoItem">
+                        <span className="rightbarInfoKey">Relationship:</span>
+                        <span className="rightbarInfoValue">Single</span>
+                    </div>
+                </div>
+                <h4 className="rightbarTitle">User Friends</h4>
+                <div className="rightbarFollowings">
+                    <div className="rightbarFollowing">
+                        <img src="assets/person/1.jpg" alt="person" className="rightbarFollowingImg" />
+                        <span className="rightbarFollowingName">Heet Kothadiya</span>
+                    </div>
+                </div>
+            </>
+        );
+    }
+
+    return(
+        <div className="rightbar">
+            <div className="rightbarWrapper">
+                <ProfileRightbar />
             </div>
         </div>
     );
