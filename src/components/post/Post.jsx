@@ -8,9 +8,9 @@ const Post = ({value}) => {
     const [islike,setIsLiked] = useState(false);
 
     const likeHandler = () => {
-        // console.log("before change : "+islike);
+        console.log("before change : "+islike);
         setIsLiked(!islike);
-        // console.log("testing : "+islike);
+        console.log("testing : "+islike);
         islike? setlike(like-1):setlike(like+1);
     }
 

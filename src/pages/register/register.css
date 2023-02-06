@@ -8,7 +8,7 @@
 }
 
 .loginWrapper {
-    width: 70%;
+    width: 75%;
     height: 70%;
     display: flex;
 }
@@ -32,7 +32,7 @@
 }
 
 .loginBox{
-    height: 320px;
+    height: 400px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
